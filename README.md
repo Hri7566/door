@@ -1,5 +1,5 @@
 # door
 
-my dad's mac fucking yeeted this project so what i had is completely gone now
+door.
 
-time to do two days of work in ten minutes
+this is eventually meant to replace Bouncer on https://www.multiplayerpiano.com, which is disappearing very soon
