@@ -106,11 +106,9 @@ module.exports = class Mainframe {
     }
 
     setRank(p, str) {
-        Object.keys(Database.db).forEach(id => {
-            let user = Database.db[id];
-            if (user._id !== p._id && id !== p._id) return;
-            user.rank = Rank.generate(str, false);
-        });
+        let user = this.getUser(p);
+        if (typeof(user) === 'undefined') return;
+        user.rank = Rank.generate(str, false);
         Database.save();
     }
 

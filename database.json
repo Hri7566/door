@@ -15,8 +15,8 @@
         "name": "Wolfy",
         "color": "#92e91b",
         "rank": {
-            "name": "User",
-            "_id": 0,
+            "name": "Administrator",
+            "_id": 2,
             "roomonly": false
         },
         "roomRanks": {}
@@ -1656,7 +1656,13 @@
             "_id": 0,
             "roomonly": false
         },
-        "roomRanks": {}
+        "roomRanks": {
+            "wss://www.multiplayerpiano.com:443✧𝓡𝓟 𝓡𝓸𝓸𝓶✧": {
+                "name": "Administrator",
+                "_id": 2,
+                "roomonly": true
+            }
+        }
     },
     "34aa7c80668124d6b97095df": {
         "_id": "34aa7c80668124d6b97095df",
@@ -1743,6 +1749,66 @@
         "_id": "ecfc5610b1ceef76b065ff99",
         "name": "London$4",
         "color": "#9c4cdc",
+        "m": "p",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "a5b8c5e05f73f6be768f39fe": {
+        "_id": "a5b8c5e05f73f6be768f39fe",
+        "name": "abrilfelix",
+        "color": "#9fbd70",
+        "m": "p",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "29594b34467a2a51d81304fd": {
+        "_id": "29594b34467a2a51d81304fd",
+        "name": "Lizard",
+        "color": "#d2eb79",
+        "m": "p",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "ad5313a537e3ac33f5316ccd": {
+        "_id": "ad5313a537e3ac33f5316ccd",
+        "name": "TOml0l3",
+        "color": "#6cd565",
+        "m": "p",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "bc5a0d30f1a67d3603a4546a": {
+        "_id": "bc5a0d30f1a67d3603a4546a",
+        "name": "HIT THAT SHIT RIGHT NOW BICH MOTHER FUCK",
+        "color": "#8efdbf",
+        "m": "p",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "79087418a8ef8ca762ffe097": {
+        "_id": "79087418a8ef8ca762ffe097",
+        "name": "King-Julian",
+        "color": "#7f37fe",
         "m": "p",
         "rank": {
             "name": "User",
