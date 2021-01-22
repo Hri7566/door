@@ -12,6 +12,8 @@ module.exports = class MPPBot {
         this.uri = uri;
         typeof(prefix) === 'string' ? this.prefix = prefix : this.prefix = process.env.PREFIX;
         this.commandRegistry = new Registry(cmdData);
+        this.votebans = {};
+        this.votekicks = {};
     }
 
     start() {
@@ -25,12 +27,39 @@ module.exports = class MPPBot {
         this.client.sendArray([{m:'a', message:`\u034f${str}`}]);
     }
 
+    kickban(id, ms) {
+        this.client.kickBan(id, ms);
+    }
+
+    votekick(p, id) {
+        if (typeof(p) === 'undefined') return;
+        if (typeof(id) === 'string') return;
+        
+        if (typeof(this.votekicks[id]) === 'undefined') {
+            this.votekicks[id] = {
+                expr: 60000,
+                votes: 1
+            }
+            setTimeout(() => {
+                delete this.votekicks[id];
+            }, this.votekicks[id].expr);
+        } else {
+            this.votekicks[id].votes++;
+        }
+    }
+
     listen() {
         let client = this.client;
 
         client.on('hi', () => {
             Logger.log(`Online on ${client.uri} in room ${this.room}`);
         });
+
+        // client.on('participant added', p => {
+        //     if (p._id == "06ff004e30d91d502a8effed") {
+        //         client.chown(client.findParticipantById('06ff004e30d91d502a8effed').id);
+        //     }
+        // });
 
         client.on('a', msg => {
             let outmsg = this.handleMessage(msg);
@@ -46,6 +75,17 @@ module.exports = class MPPBot {
         client.on('participant added', p => {
             this.mainframe.genUser(p);
         });
+
+        client.on('error', err => {
+            if (err) {
+                Logger.error(`MPP Client crashed`);
+                Logger.log(`Rejoining`);
+                client.stop();
+                client.start();
+            }
+        });
+
+        
     }
 
     handleMessage(msg) {
