@@ -17,7 +17,7 @@ module.exports = class Mainframe {
         Object.keys(Database.rooms).forEach(uri => {
             let rooms = Database.rooms[uri];
             rooms.forEach(room => {
-                this.mppbots[uri+room] = new MPPBot(this, process.env.PREFIX, uri, room, this.commands);
+                this.mppbots[uri+room] = new MPPBot(this, process.env.BOT_PREFIX, uri, room, this.commands);
                 this.mppbots[uri+room].start();
             });
         });

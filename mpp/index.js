@@ -10,7 +10,7 @@ module.exports = class MPPBot {
         this.room = room;
         this.logsChat = process.env.CHAT_LOG;
         this.uri = uri;
-        typeof(prefix) === 'string' ? this.prefix = prefix : this.prefix = process.env.PREFIX;
+        typeof(prefix) === 'string' ? this.prefix = prefix : this.prefix = process.env.BOT_PREFIX;
         this.commandRegistry = new Registry(cmdData);
         this.votebans = {};
         this.votekicks = {};
@@ -32,20 +32,32 @@ module.exports = class MPPBot {
     }
 
     votekick(p, id) {
+        let ret;
         if (typeof(p) === 'undefined') return;
         if (typeof(id) === 'string') return;
-        
-        if (typeof(this.votekicks[id]) === 'undefined') {
-            this.votekicks[id] = {
-                expr: 60000,
-                votes: 1
+
+        let kuser = this.mainframe.findUser(id);
+        if (typeof(kuser) !== 'undefined') {
+            if (typeof(this.votekicks[id]) === 'undefined') {
+                this.votekicks[id] = {
+                    expr: 60000,
+                    votes: 1
+                }
+
+                setTimeout(() => {
+                    delete this.votekicks[id];
+                }, this.votekicks[id].expr);
+
+                ret = `A votekick on ${kuser.name} has been started. You have 60 seconds to get ${Math.ceil(Object.keys(this.client.ppl)/2)-this.votekicks[id].votes} more votes in.`;
+            } else {
+                this.votekicks[id].votes++;
+                ret = `${p.name} has voted to kick ${kuser.name}. ${Math.ceil(Object.keys(this.client.ppl)/2)-this.votekicks[id].votes} more votes are needed.`;
             }
-            setTimeout(() => {
-                delete this.votekicks[id];
-            }, this.votekicks[id].expr);
         } else {
-            this.votekicks[id].votes++;
+            ret = `Couldn't find user.`;
         }
+
+        return ret;
     }
 
     listen() {
@@ -92,6 +104,7 @@ module.exports = class MPPBot {
         msg.args = msg.a.split(' ');
         msg.cmd = msg.args[0].split(this.prefix).join('');
         msg.user = this.mainframe.getUser(msg.p);
+        msg.argcat = msg.a.substring(this.prefix.length + msg.cmd.length, msg.a.length).trim();
         msg.p.rank = this.mainframe.getRank(msg.p, this);
 
         let ret;
