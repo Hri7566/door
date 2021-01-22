@@ -1,3 +1,1754 @@
 {
-    
+    "ead940199c7d9717e5149919": {
+        "_id": "ead940199c7d9717e5149919",
+        "name": "๖ۣۜH͜r̬i͡7566",
+        "color": "#8d3f50",
+        "rank": {
+            "name": "Owner",
+            "_id": 3,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "1f4093703f21459c38e34713": {
+        "_id": "1f4093703f21459c38e34713",
+        "name": "Wolfy",
+        "color": "#92e91b",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "53b094dcddd02f48e4bd8cbe": {
+        "_id": "53b094dcddd02f48e4bd8cbe",
+        "name": "Qhy  「 qhy!help 」",
+        "color": "#fb0c87",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "3b318e06b2500d8a525ae0d6": {
+        "_id": "3b318e06b2500d8a525ae0d6",
+        "name": "[discord.gg/k44Eqha]",
+        "color": "#810442",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "06ff004e30d91d502a8effed": {
+        "_id": "06ff004e30d91d502a8effed",
+        "name": "Bouncer [//help]",
+        "color": "#617be2",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "27b878c711eb1c5c785bc139": {
+        "_id": "27b878c711eb1c5c785bc139",
+        "name": "Theta [=help]",
+        "color": "#a8e8ed",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "2e7eec46513a20c7408b6f77": {
+        "_id": "2e7eec46513a20c7408b6f77",
+        "name": "JustCoder",
+        "color": "#f7c472",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "ae8a84f7c3fc73c0b61b50eb": {
+        "_id": "ae8a84f7c3fc73c0b61b50eb",
+        "name": "Qhy Discord Bridge",
+        "color": "#b42a76",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "0317ba5f9699e3870e8329b1": {
+        "_id": "0317ba5f9699e3870e8329b1",
+        "name": "Politely, A Greed Slime",
+        "color": "#685348",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "15ed998d443ce6bb86c6abb0": {
+        "_id": "15ed998d443ce6bb86c6abb0",
+        "name": "Anonymous",
+        "color": "#c19f17",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "43ecfcaa204fecc60c84a690": {
+        "_id": "43ecfcaa204fecc60c84a690",
+        "name": "☯️ CARMA ー 4̴͓̍ ̴̝̿0̵̨̒ ̵̤͊4̴",
+        "color": "#21b413",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {
+            "wss://www.multiplayerpiano.com:443✧𝓡𝓟 𝓡𝓸𝓸𝓶✧": {
+                "name": "Moderator",
+                "_id": 1,
+                "roomonly": true
+            }
+        }
+    },
+    "6a205ee16caf3d769a1d7cfb": {
+        "_id": "6a205ee16caf3d769a1d7cfb",
+        "name": "🇦 ͏🇩 ͏🇩 ͏🇮 ͏🇪",
+        "color": "#14aa8d",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "59607eb9ba5a9bcd2dcced69": {
+        "_id": "59607eb9ba5a9bcd2dcced69",
+        "name": "Anonymous",
+        "color": "#0f168e",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "a07d4be484e060b4a3bfa637": {
+        "_id": "a07d4be484e060b4a3bfa637",
+        "name": "The True Sans",
+        "color": "#a73ba0",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "604147d82624c9e4d3a17229": {
+        "_id": "604147d82624c9e4d3a17229",
+        "name": "꧁ঔৣ༺ω ε  Γ Ω༻️ঔৣ꧂",
+        "color": "#44adcc",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "7a3a465966411e1c883a8d38": {
+        "_id": "7a3a465966411e1c883a8d38",
+        "name": "HENRY STICKMIN💎",
+        "color": "#f2f374",
+        "m": "p",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "6ee4dc9f9684479cc9b69a40": {
+        "_id": "6ee4dc9f9684479cc9b69a40",
+        "name": "Theta's Finder",
+        "color": "#eb4385",
+        "m": "p",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "b80fd3d747facbe1a39d8137": {
+        "_id": "b80fd3d747facbe1a39d8137",
+        "name": "Anonymous",
+        "color": "#9a1fc5",
+        "m": "p",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "4291c8a1cd18f023f5a6c6a2": {
+        "_id": "4291c8a1cd18f023f5a6c6a2",
+        "name": "Anonymous",
+        "color": "#a58e21",
+        "m": "p",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "7f896b3798663e25dc544ad9": {
+        "_id": "7f896b3798663e25dc544ad9",
+        "name": "Anonymous",
+        "color": "#1adad9",
+        "m": "p",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "dc599033e4a146bf698c398a": {
+        "_id": "dc599033e4a146bf698c398a",
+        "name": "Anonymous",
+        "color": "#2c6861",
+        "m": "p",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "5f1cc6ef899a686fd41af718": {
+        "_id": "5f1cc6ef899a686fd41af718",
+        "name": "Anonymous",
+        "color": "#271247",
+        "m": "p",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "486d86c37b6580244eba5cca": {
+        "_id": "486d86c37b6580244eba5cca",
+        "name": "Anonymous",
+        "color": "#5fc75a",
+        "m": "p",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "970319ab1a75e98d0d49cac6": {
+        "_id": "970319ab1a75e98d0d49cac6",
+        "name": "Anonymous",
+        "color": "#6fa40c",
+        "m": "p",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "e7f11e4f37ce3354b7b64b10": {
+        "_id": "e7f11e4f37ce3354b7b64b10",
+        "name": "Anonymous",
+        "color": "#ab0836",
+        "m": "p",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "d6777569c0a07e7d390cd1b9": {
+        "_id": "d6777569c0a07e7d390cd1b9",
+        "name": "Anonymous",
+        "color": "#57937e",
+        "m": "p",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "e7a38cd220212901fb60f107": {
+        "_id": "e7a38cd220212901fb60f107",
+        "name": "Anonymous",
+        "color": "#ba69ab",
+        "m": "p",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "f8647899cd248d6ffaa0ce8f": {
+        "_id": "f8647899cd248d6ffaa0ce8f",
+        "name": "Anonymous",
+        "color": "#7c0393",
+        "m": "p",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "aec3c54e0b1255021d387209": {
+        "_id": "aec3c54e0b1255021d387209",
+        "name": "Anonymous",
+        "color": "#ecb0e6",
+        "m": "p",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "667491b93f63b24fcffd8a04": {
+        "_id": "667491b93f63b24fcffd8a04",
+        "name": "Bouncer [//help]",
+        "color": "#907b90",
+        "m": "p",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "f92f445f35b3d1acd85dc36d": {
+        "_id": "f92f445f35b3d1acd85dc36d",
+        "name": "Anonymous",
+        "color": "#d80382",
+        "m": "p",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "e1281ddb348f2506a14594ae": {
+        "_id": "e1281ddb348f2506a14594ae",
+        "name": "Anonymous",
+        "color": "#14d810",
+        "m": "p",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "f12e33bad4738be9e7ad004c": {
+        "_id": "f12e33bad4738be9e7ad004c",
+        "name": "Bouncer [//help]",
+        "color": "#a46257",
+        "m": "p",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "700294c23b161b67c50d61e5": {
+        "_id": "700294c23b161b67c50d61e5",
+        "name": "Anonymous",
+        "color": "#79bdf0",
+        "m": "p",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "bf0d73225cc145e2f728517c": {
+        "_id": "bf0d73225cc145e2f728517c",
+        "name": "Anonymous",
+        "color": "#fd6929",
+        "m": "p",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "d93e4175c958affd00c4d8bd": {
+        "_id": "d93e4175c958affd00c4d8bd",
+        "name": "Anonymous",
+        "color": "#1b6db2",
+        "m": "p",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "b96d73709b3408dc15a51f9f": {
+        "_id": "b96d73709b3408dc15a51f9f",
+        "name": "Anonymous",
+        "color": "#d59636",
+        "m": "p",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "e422438178205c01f74b1d8a": {
+        "_id": "e422438178205c01f74b1d8a",
+        "name": "Anonymous",
+        "color": "#2ef2a8",
+        "m": "p",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "96c18588cb595b5c7461bd87": {
+        "_id": "96c18588cb595b5c7461bd87",
+        "name": "Anonymous",
+        "color": "#631f55",
+        "m": "p",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "c6f60ff8aa7b014e52e2f37c": {
+        "_id": "c6f60ff8aa7b014e52e2f37c",
+        "name": "Anonymous",
+        "color": "#241c62",
+        "m": "p",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "fd3f95c69152917a02b19864": {
+        "_id": "fd3f95c69152917a02b19864",
+        "name": "Anonymous",
+        "color": "#e7bbaf",
+        "m": "p",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "0c82360e218d342f9683615a": {
+        "_id": "0c82360e218d342f9683615a",
+        "name": "Anonymous",
+        "color": "#e92b6f",
+        "m": "p",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "1eeff06efbdf072db180fb25": {
+        "_id": "1eeff06efbdf072db180fb25",
+        "name": "Anonymous",
+        "color": "#e3b6e8",
+        "m": "p",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "dadee0b588886ae36d836275": {
+        "_id": "dadee0b588886ae36d836275",
+        "name": "Anonymous",
+        "color": "#06bd3b",
+        "m": "p",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "0137b00959296bd79ed0da50": {
+        "_id": "0137b00959296bd79ed0da50",
+        "name": "Anonymous",
+        "color": "#4d144f",
+        "m": "p",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "187a666b072105ce167fb58d": {
+        "_id": "187a666b072105ce167fb58d",
+        "name": "Anonymous",
+        "color": "#61d61e",
+        "m": "p",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "a2db4a4bfb3d6ef7c4880271": {
+        "_id": "a2db4a4bfb3d6ef7c4880271",
+        "name": "Anonymous",
+        "color": "#d4ed55",
+        "m": "p",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "cb10fc9e651032d5017af4ba": {
+        "_id": "cb10fc9e651032d5017af4ba",
+        "name": "Anonymous",
+        "color": "#42f8b8",
+        "m": "p",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "65490d71e370be43eefc3efa": {
+        "_id": "65490d71e370be43eefc3efa",
+        "name": "Anonymous",
+        "color": "#15dbb8",
+        "m": "p",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "091b7df3d7237399c51e97a7": {
+        "_id": "091b7df3d7237399c51e97a7",
+        "name": "Anonymous",
+        "color": "#67ae21",
+        "m": "p",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "0667d0722bd4655456c090a8": {
+        "_id": "0667d0722bd4655456c090a8",
+        "name": "Anonymous",
+        "color": "#1ed8cb",
+        "m": "p",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "c8739fd6f691e416e67d7abe": {
+        "_id": "c8739fd6f691e416e67d7abe",
+        "name": "Anonymous",
+        "color": "#990403",
+        "m": "p",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "708e009bb4caefa76fc4c2d3": {
+        "_id": "708e009bb4caefa76fc4c2d3",
+        "name": "Anonymous",
+        "color": "#0427b1",
+        "m": "p",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "14bf0a8efbc51fec2578c50c": {
+        "_id": "14bf0a8efbc51fec2578c50c",
+        "name": "Anonymous",
+        "color": "#ad7b0a",
+        "m": "p",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "643c1470418f861def768f81": {
+        "_id": "643c1470418f861def768f81",
+        "name": "Anonymous",
+        "color": "#04bdbc",
+        "m": "p",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "9f3dbae55f51aaf4d7eea402": {
+        "_id": "9f3dbae55f51aaf4d7eea402",
+        "name": "Anonymous",
+        "color": "#b5f084",
+        "m": "p",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "b864cc6b8bd48322e4c1c10e": {
+        "_id": "b864cc6b8bd48322e4c1c10e",
+        "name": "Anonymous",
+        "color": "#139ef6",
+        "m": "p",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "3707ed29b7e794208971107a": {
+        "_id": "3707ed29b7e794208971107a",
+        "name": "Anonymous",
+        "color": "#846639",
+        "m": "p",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "ce6bf01be21daf72f87b6f23": {
+        "_id": "ce6bf01be21daf72f87b6f23",
+        "name": "Anonymous",
+        "color": "#366a06",
+        "m": "p",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "3233b681141961771bc3ad1e": {
+        "_id": "3233b681141961771bc3ad1e",
+        "name": "Anonymous",
+        "color": "#3f02d1",
+        "m": "p",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "332f0af5470d33248a476f5f": {
+        "_id": "332f0af5470d33248a476f5f",
+        "name": "Anonymous",
+        "color": "#d350ec",
+        "m": "p",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "043f930d8e1ba405e3f691d5": {
+        "_id": "043f930d8e1ba405e3f691d5",
+        "name": "Anonymous",
+        "color": "#9322ff",
+        "m": "p",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "e49b8eb376a72ae3f127d9eb": {
+        "_id": "e49b8eb376a72ae3f127d9eb",
+        "name": "﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽",
+        "color": "#2fc319",
+        "m": "p",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "aa306f908e6d44c0d2c29f95": {
+        "_id": "aa306f908e6d44c0d2c29f95",
+        "name": "Anonymous",
+        "color": "#7ac418",
+        "m": "p",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "a43c83140facf085f56d843e": {
+        "_id": "a43c83140facf085f56d843e",
+        "name": "Anonymous",
+        "color": "#973e64",
+        "m": "p",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "65ae869038fe109821ea357a": {
+        "_id": "65ae869038fe109821ea357a",
+        "name": "Anonymous",
+        "color": "#585fca",
+        "m": "p",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "4354ca19a6fab9ff96aded4d": {
+        "_id": "4354ca19a6fab9ff96aded4d",
+        "name": "💰🕶🧥C͖͖̮̗̗͉̔̓ͧͨl͖͖̰̝ͭ̀͘ụ̴̴̾̀͟͡b🧥🕶💰",
+        "color": "#050121",
+        "m": "p",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "40fd607f799580efa32a9861": {
+        "_id": "40fd607f799580efa32a9861",
+        "name": "Anonymous",
+        "color": "#f52aa7",
+        "m": "p",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "8bafdcb4438048f428ec3380": {
+        "_id": "8bafdcb4438048f428ec3380",
+        "name": "Anonymous",
+        "color": "#ed1947",
+        "m": "p",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "48105e6edac97027743a31ab": {
+        "_id": "48105e6edac97027743a31ab",
+        "name": "Anonymous",
+        "color": "#5730dd",
+        "m": "p",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "9a0fbb3d43028e0831d27f46": {
+        "_id": "9a0fbb3d43028e0831d27f46",
+        "name": "Anonymous",
+        "color": "#72d2d5",
+        "m": "p",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "d190acb2fb9558b8e9dbd67c": {
+        "_id": "d190acb2fb9558b8e9dbd67c",
+        "name": "Anonymous",
+        "color": "#c213c4",
+        "m": "p",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "98a206ad0c74780d0e4505fa": {
+        "_id": "98a206ad0c74780d0e4505fa",
+        "name": "Anonymous",
+        "color": "#d8600d",
+        "m": "p",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "9ef956174336d94a25d50ee8": {
+        "_id": "9ef956174336d94a25d50ee8",
+        "name": "Anonymous",
+        "color": "#a0b80b",
+        "m": "p",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "2e9c2e5a75bb53df9c55bb3a": {
+        "_id": "2e9c2e5a75bb53df9c55bb3a",
+        "name": "Anonymous",
+        "color": "#4bff12",
+        "m": "p",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "069748d8377cbe0f89a57a56": {
+        "_id": "069748d8377cbe0f89a57a56",
+        "name": "Anonymous",
+        "color": "#25bdda",
+        "m": "p",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "e1be0c97c07536c9b2f1c3ec": {
+        "_id": "e1be0c97c07536c9b2f1c3ec",
+        "name": "Anonymous",
+        "color": "#67a645",
+        "m": "p",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "237f608368c600ac69642482": {
+        "_id": "237f608368c600ac69642482",
+        "name": "Anonymous",
+        "color": "#87f2e6",
+        "m": "p",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "145b67b42f8a3e846ba4b147": {
+        "_id": "145b67b42f8a3e846ba4b147",
+        "name": "Anonymous",
+        "color": "#d4bb76",
+        "m": "p",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "08b3ce6faf2cc6d2208b32f7": {
+        "_id": "08b3ce6faf2cc6d2208b32f7",
+        "name": "Anonymous",
+        "color": "#510a51",
+        "m": "p",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "b5016711fee68a8a3da17c51": {
+        "_id": "b5016711fee68a8a3da17c51",
+        "name": "Anonymous",
+        "color": "#232579",
+        "m": "p",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "5cd0ddfcf6413ac5dbb5abad": {
+        "_id": "5cd0ddfcf6413ac5dbb5abad",
+        "name": "Anonymous",
+        "color": "#9305f2",
+        "m": "p",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "b5109551c237dfb38b102218": {
+        "_id": "b5109551c237dfb38b102218",
+        "name": "Anonymous",
+        "color": "#29df82",
+        "m": "p",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "3c58eb2f89dc620235af1734": {
+        "_id": "3c58eb2f89dc620235af1734",
+        "name": "﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽",
+        "color": "#84e73b",
+        "m": "p",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "a67e411d02c4eb50a747bf0d": {
+        "_id": "a67e411d02c4eb50a747bf0d",
+        "name": "ew",
+        "color": "#9dfe03",
+        "m": "p",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "fb4c632eac55f0bb6fa6dabd": {
+        "_id": "fb4c632eac55f0bb6fa6dabd",
+        "name": "Anonymous",
+        "color": "#38e1dc",
+        "m": "p",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "d3c3a829de6f408c71a25860": {
+        "_id": "d3c3a829de6f408c71a25860",
+        "name": "Anonymous",
+        "color": "#d12b53",
+        "m": "p",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "c7ca74c1e9571cd2a16de9bc": {
+        "_id": "c7ca74c1e9571cd2a16de9bc",
+        "name": "Anonymous",
+        "color": "#6fcb35",
+        "m": "p",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "ae0fe1ad1b972f2d69da8c00": {
+        "_id": "ae0fe1ad1b972f2d69da8c00",
+        "name": "Anonymous",
+        "color": "#e09736",
+        "m": "p",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "4c08093bb0e59452f7f0d89c": {
+        "_id": "4c08093bb0e59452f7f0d89c",
+        "name": "Anonymous",
+        "color": "#7300ab",
+        "m": "p",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "07e856b8df985fe7630fcf9f": {
+        "_id": "07e856b8df985fe7630fcf9f",
+        "name": "Anonymous",
+        "color": "#850f03",
+        "m": "p",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "b7ec9e2e604d28e736b5882b": {
+        "_id": "b7ec9e2e604d28e736b5882b",
+        "name": "Anonymous",
+        "color": "#f78c9b",
+        "m": "p",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "33aeab055aaa7b1822be7f37": {
+        "_id": "33aeab055aaa7b1822be7f37",
+        "name": "Anonymous",
+        "color": "#80d4ce",
+        "m": "p",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "2c37b58874792e85f36b4aa0": {
+        "_id": "2c37b58874792e85f36b4aa0",
+        "name": "Anonymous",
+        "color": "#3578b7",
+        "m": "p",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "f8fd70cfd8f1ee2f8655011b": {
+        "_id": "f8fd70cfd8f1ee2f8655011b",
+        "name": "Bouncer [//help]",
+        "color": "#9acd2c",
+        "m": "p",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "44f3fde201ab10641b2800d8": {
+        "_id": "44f3fde201ab10641b2800d8",
+        "name": "O",
+        "color": "#90f5e8",
+        "m": "p",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "48e3c23976456a0d23eaddc2": {
+        "_id": "48e3c23976456a0d23eaddc2",
+        "name": "Anonymous",
+        "color": "#3ab965",
+        "m": "p",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "89b90e93ab44d2c188859452": {
+        "_id": "89b90e93ab44d2c188859452",
+        "name": "Anonymous",
+        "color": "#47cace",
+        "m": "p",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "50b0adc0ffc823d41aada696": {
+        "_id": "50b0adc0ffc823d41aada696",
+        "name": "Bouncer [//help]",
+        "color": "#e3c8d7",
+        "m": "p",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "e7d26944369984356510979f": {
+        "_id": "e7d26944369984356510979f",
+        "name": "Anonymous",
+        "color": "#ecc4cc",
+        "m": "p",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "bc45a8fa204dea4725c415c7": {
+        "_id": "bc45a8fa204dea4725c415c7",
+        "name": "Bouncer [//help]",
+        "color": "#75c72e",
+        "m": "p",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "bce5efa41b13f01dfbe23f95": {
+        "_id": "bce5efa41b13f01dfbe23f95",
+        "name": "Anonymous",
+        "color": "#19741a",
+        "m": "p",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "d19f7e1dd63c99e10295e343": {
+        "_id": "d19f7e1dd63c99e10295e343",
+        "name": "Anonymous",
+        "color": "#9a3728",
+        "m": "p",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "044f793504129faa4cfc660b": {
+        "_id": "044f793504129faa4cfc660b",
+        "name": "Anonymous",
+        "color": "#439153",
+        "m": "p",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "ab2dc201138096d7ac82cdb9": {
+        "_id": "ab2dc201138096d7ac82cdb9",
+        "name": "Anonymous",
+        "color": "#de07a9",
+        "m": "p",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "b65d694b701ce1d3ba0b8ad7": {
+        "_id": "b65d694b701ce1d3ba0b8ad7",
+        "name": "Anonymous",
+        "color": "#12bb03",
+        "m": "p",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "cbdb4c459f2678c56afc7f9c": {
+        "_id": "cbdb4c459f2678c56afc7f9c",
+        "name": "Bouncer [//help]",
+        "color": "#90c030",
+        "m": "p",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "91b210f3d0010d95a3f12218": {
+        "_id": "91b210f3d0010d95a3f12218",
+        "name": "Anonymous",
+        "color": "#6d03a3",
+        "m": "p",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "305fe5e1c4499bd9598e64f1": {
+        "_id": "305fe5e1c4499bd9598e64f1",
+        "name": "Anonymous",
+        "color": "#1d561d",
+        "m": "p",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "977058844a5be446a0b69e4f": {
+        "_id": "977058844a5be446a0b69e4f",
+        "name": "Anonymous",
+        "color": "#16ca94",
+        "m": "p",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "7877d91b91290b7ba0131280": {
+        "_id": "7877d91b91290b7ba0131280",
+        "name": "Anonymous",
+        "color": "#a41a53",
+        "m": "p",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "21180a0d717c05a4163df2f5": {
+        "_id": "21180a0d717c05a4163df2f5",
+        "name": "Anonymous",
+        "color": "#8ade9a",
+        "m": "p",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "c677e572c046aeff40271da0": {
+        "_id": "c677e572c046aeff40271da0",
+        "name": "Anonymous",
+        "color": "#0feab5",
+        "m": "p",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "5a60b08722e7b97cbe9f4e98": {
+        "_id": "5a60b08722e7b97cbe9f4e98",
+        "name": "Anonymous",
+        "color": "#e4cc41",
+        "m": "p",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "5f9256759b0958b4c7aaba6a": {
+        "_id": "5f9256759b0958b4c7aaba6a",
+        "name": "Anonymous",
+        "color": "#380f28",
+        "m": "p",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "74bfd64b0d33772d854df231": {
+        "_id": "74bfd64b0d33772d854df231",
+        "name": "Anonymous",
+        "color": "#464581",
+        "m": "p",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "ce06f936e0956db1c218db63": {
+        "_id": "ce06f936e0956db1c218db63",
+        "name": "Anonymous",
+        "color": "#81ed7e",
+        "m": "p",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "332afbe2c6cdfee46f8f1b82": {
+        "_id": "332afbe2c6cdfee46f8f1b82",
+        "name": "Anonymous",
+        "color": "#169d39",
+        "m": "p",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "f0bab034e0efcb7a6e148ff4": {
+        "_id": "f0bab034e0efcb7a6e148ff4",
+        "name": "Anonymous",
+        "color": "#cc8dbb",
+        "m": "p",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "053f15261ddc4cd5c3b7213b": {
+        "_id": "053f15261ddc4cd5c3b7213b",
+        "name": "Anonymous",
+        "color": "#f8704c",
+        "m": "p",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "de5289a4caf394cf257e49eb": {
+        "_id": "de5289a4caf394cf257e49eb",
+        "name": "Anonymous",
+        "color": "#29ce3d",
+        "m": "p",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "8324f4e805b0144472fea12e": {
+        "_id": "8324f4e805b0144472fea12e",
+        "name": "Anonymous",
+        "color": "#9a7ff2",
+        "m": "p",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "c1167b2693f5b845c8d4a13f": {
+        "_id": "c1167b2693f5b845c8d4a13f",
+        "name": "pple is LOSER hahahahahahaha pple is LOS",
+        "color": "#caa146",
+        "m": "p",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "efdf9a385f6c719a3e7e6c8c": {
+        "_id": "efdf9a385f6c719a3e7e6c8c",
+        "name": "JJ",
+        "color": "#0cb68a",
+        "m": "p",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "1c9ef3caa3dad3bfc265673f": {
+        "_id": "1c9ef3caa3dad3bfc265673f",
+        "name": "Anonymous",
+        "color": "#420e22",
+        "m": "p",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "72db2b5d13d3174ae9dfcff0": {
+        "_id": "72db2b5d13d3174ae9dfcff0",
+        "name": "Anonymous",
+        "color": "#d76033",
+        "m": "p",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "32df0108bed08eca4bcadbf0": {
+        "_id": "32df0108bed08eca4bcadbf0",
+        "name": "ew",
+        "color": "#26a1b6",
+        "m": "p",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "0cba370f5d36a7bc47d9cd0e": {
+        "_id": "0cba370f5d36a7bc47d9cd0e",
+        "name": "Anonymous",
+        "color": "#3b666e",
+        "m": "p",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "91bb45cdbf29008ac75ec266": {
+        "_id": "91bb45cdbf29008ac75ec266",
+        "name": "Anonymous",
+        "color": "#46f7e8",
+        "m": "p",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "8ca0613611e6a4d931889398": {
+        "_id": "8ca0613611e6a4d931889398",
+        "name": "GamingYT",
+        "color": "#853b01",
+        "m": "p",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "9899a457d0b3f87c93e6f5cf": {
+        "_id": "9899a457d0b3f87c93e6f5cf",
+        "name": "🦉♩𝘉𝘰𝘣🎹",
+        "color": "#b2ecd7",
+        "m": "p",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "46b407c35b42b9f21b8cd2c9": {
+        "_id": "46b407c35b42b9f21b8cd2c9",
+        "name": "🔪👑𝓗𝓲𝓴𝓪𝓻𝓲 𝓐𝓸𝔃𝓸𝓻𝓪💎✨",
+        "color": "#500bcc",
+        "m": "p",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "a120c9af852617940b51ec69": {
+        "_id": "a120c9af852617940b51ec69",
+        "name": "Wow Dead X_X",
+        "color": "#c52ed5",
+        "m": "p",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "020e0b68aea3a91ba27aa551": {
+        "_id": "020e0b68aea3a91ba27aa551",
+        "name": "๖ۣۜＴｈｅ　Ｉｎｔｅｌ　Ｕｓｅｒ　Ｗｈｏ　Ｃｏｕｌｄ／ＪＤＭ／ＰＣ　Ｌｏｖｅｒ",
+        "color": "#d7f63b",
+        "m": "p",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "be1172e6d4898c31250d544e": {
+        "_id": "be1172e6d4898c31250d544e",
+        "name": "Anonymous",
+        "color": "#6fd8ff",
+        "m": "p",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "87b2dcda107665025359178c": {
+        "_id": "87b2dcda107665025359178c",
+        "name": "Chisk",
+        "color": "#721596",
+        "m": "p",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "11af6f92671c068159b8122f": {
+        "_id": "11af6f92671c068159b8122f",
+        "name": "bruh",
+        "color": "#454b4f",
+        "m": "p",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "821fcfc910dc8dbdce454a97": {
+        "_id": "821fcfc910dc8dbdce454a97",
+        "name": "KaidenSkinner",
+        "color": "#f930a1",
+        "m": "p",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "26fb7d2bd29620c71baec377": {
+        "_id": "26fb7d2bd29620c71baec377",
+        "name": "No.",
+        "color": "#2b35da",
+        "m": "p",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "34aa7c80668124d6b97095df": {
+        "_id": "34aa7c80668124d6b97095df",
+        "name": "FNNN",
+        "color": "#ade390",
+        "m": "p",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "034171d0fbd0985ec9680e1f": {
+        "_id": "034171d0fbd0985ec9680e1f",
+        "name": "king jukebox",
+        "color": "#553c15",
+        "m": "p",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "203531ceb69810186c125e14": {
+        "_id": "203531ceb69810186c125e14",
+        "name": "Anonymous",
+        "color": "#526cc4",
+        "m": "p",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "b40df99cc2ca6f503fba77cb": {
+        "color": "#0066ff",
+        "name": "Bouncer [//help]",
+        "_id": "b40df99cc2ca6f503fba77cb",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "4108b41268feaa4a02e60fe1": {
+        "color": "#a004fb",
+        "name": "Theta [=help]",
+        "_id": "4108b41268feaa4a02e60fe1",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "f46132453478f0a8679e1584": {
+        "color": "#8d3f50",
+        "name": "๖ۣۜH͜r̬i͡7566",
+        "_id": "f46132453478f0a8679e1584",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "6939b0f88f59fd67bed92911": {
+        "_id": "6939b0f88f59fd67bed92911",
+        "name": "Anonymous",
+        "color": "#e0bc9c",
+        "m": "p",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    },
+    "ecfc5610b1ceef76b065ff99": {
+        "_id": "ecfc5610b1ceef76b065ff99",
+        "name": "London$4",
+        "color": "#9c4cdc",
+        "m": "p",
+        "rank": {
+            "name": "User",
+            "_id": 0,
+            "roomonly": false
+        },
+        "roomRanks": {}
+    }
 }

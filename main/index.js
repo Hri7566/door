@@ -53,8 +53,74 @@ module.exports = class Mainframe {
         }
     }
 
-    getRank(p) {
-        return Rank.generate('');
+    findUser(str) {
+        let ret;
+        Object.keys(Database.db).forEach(id => {
+            let user = Database.db[id];
+            if (id.includes(str) || user.name.includes(str) || user._id.includes(str)) {
+                ret = user;
+            }
+        });
+        return ret;
+    }
+
+    getRank(p, bot) {
+        if (typeof(p) === 'undefined') return;
+        let ret = Rank.generate('user', false);
+        let user = this.getUser(p);
+        let hasRank = true;
+        let hasRoomRanks = true;
+        if (typeof(user.rank) === 'undefined') hasRank = false;
+        if (typeof(user.roomRanks) === 'undefined') hasRoomRanks = false;
+
+        if (hasRank) {
+            if (hasRoomRanks) {
+                let roomrank;
+                Object.keys(user.roomRanks).forEach(uriroom => {
+                    if (uriroom == bot.uri+bot.room) {
+                        roomrank = user.roomRanks[uriroom];
+                    }
+                });
+                if (typeof(roomrank) === 'undefined') {
+                    roomrank = Rank.generate('user', false);
+                }
+                if (roomrank._id > user.rank._id) {
+                    ret = roomrank;
+                } else {
+                    ret = user.rank;
+                }
+            } else {
+                ret = user.rank;
+            }
+        } else {
+            if (hasRoomRanks) {
+                Object.keys(user.roomRanks).forEach(uriroom => {
+                    if (uriroom == bot.uri+bot.room) {
+                        ret = user.roomRanks[uriroom];
+                    }
+                });
+            }
+        }
+
+        return ret;
+    }
+
+    setRank(p, str) {
+        Object.keys(Database.db).forEach(id => {
+            let user = Database.db[id];
+            if (user._id !== p._id && id !== p._id) return;
+            user.rank = Rank.generate(str, false);
+        });
+        Database.save();
+    }
+
+    setRoomRank(p, str, bot) {
+        let user = this.getUser(p);
+        if (typeof(user.roomRanks) === 'undefined') {
+            user.roomRanks = {};
+        }
+        user.roomRanks[bot.uri+bot.room] = Rank.generate(str, true);
+        Database.save();
     }
 
     genUser(p) {
@@ -63,5 +129,7 @@ module.exports = class Mainframe {
         if (typeof(this.getUser(p)) === 'undefined') {
             Database.db[p._id] = new User(p);
         }
+        
+        Database.save();
     }
 }

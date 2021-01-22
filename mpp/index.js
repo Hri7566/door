@@ -9,6 +9,7 @@ module.exports = class MPPBot {
         this.client = new Client(uri, proxy);
         this.room = room;
         this.logsChat = process.env.CHAT_LOG;
+        this.uri = uri;
         typeof(prefix) === 'string' ? this.prefix = prefix : this.prefix = process.env.PREFIX;
         this.commandRegistry = new Registry(cmdData);
     }
@@ -51,9 +52,7 @@ module.exports = class MPPBot {
         msg.args = msg.a.split(' ');
         msg.cmd = msg.args[0].split(this.prefix).join('');
         msg.user = this.mainframe.getUser(msg.p);
-        msg.p.rank = this.mainframe.getRank(msg.p);
-
-        Logger.debug(msg.cmd);
+        msg.p.rank = this.mainframe.getRank(msg.p, this);
 
         let ret;
         if (!msg.a.startsWith(this.prefix)) return;
