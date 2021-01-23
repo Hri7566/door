@@ -10,7 +10,7 @@ module.exports = class MPPBot {
         this.room = room;
         this.logsChat = process.env.CHAT_LOG;
         this.uri = uri;
-        typeof(prefix) === 'string' ? this.prefix = prefix : this.prefix = process.env.BOT_PREFIX;
+        typeof(prefix) === 'string' ? this.prefix = prefix : this.prefix = ";";
         this.commandRegistry = new Registry(cmdData);
         this.votebans = {};
         this.votekicks = {};
@@ -90,7 +90,8 @@ module.exports = class MPPBot {
 
         client.on('error', err => {
             if (err) {
-                Logger.error(`MPP Client crashed`);
+                Logger.error(err);
+                Logger.log(`MPP Client crashed`);
                 Logger.log(`Rejoining`);
                 client.stop();
                 client.start();
