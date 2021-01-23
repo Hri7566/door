@@ -1,4 +1,5 @@
 const Command = require(__approot+'/lib/Command');
+const Database = require(__approot+'/lib/Database');
 
 let blacklist = [
     "process",
