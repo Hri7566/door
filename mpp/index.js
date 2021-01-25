@@ -44,16 +44,16 @@ module.exports = class MPPBot {
             if (!(this.chatStack.length > 0)) return;
             if (this.chatStack.length < 4) {
                 if (typeof(this.chatStack[0]) === 'undefined') return;
-                this.client.sendArray([{m:'a', message: this.chatStack.reverse().pop()}]);
+                this.client.sendArray([{m:'a', message: this.chatStack[0]}]);
                 //console.log(this.chatStack[0]);
                 this.chatStack.splice(0, 1);
             } else {
+                let timeToAdd = 5000;
+                let time = timeToAdd;
                 setTimeout(() => {
-                    if (typeof(this.chatStack[0]) === 'undefined') return;
-                    this.client.sendArray([{m:'a', message: this.chatStack.reverse().pop()}]);
-                    //console.log(this.chatStack[0]);
-                    this.chatStack.splice(0, 1);
-                }, 1600);
+                    time += timeToAdd;
+                    this.client.sendArray([{m:'a', message: this.chatStack[0]}]);
+                }, time);
             }
         });
     }
