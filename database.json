@@ -11197,18 +11197,6 @@
         },
         "roomRanks": {}
     },
-    "05c0a9d1b71bdb4c07771bf3": {
-        "_id": "05c0a9d1b71bdb4c07771bf3",
-        "name": "Qhy  「 qhy!help 」",
-        "color": "#d8048b",
-        "m": "p",
-        "rank": {
-            "name": "User",
-            "_id": 0,
-            "roomonly": false
-        },
-        "roomRanks": {}
-    },
     "f3060d87bf46f7234b5c503a": {
         "_id": "f3060d87bf46f7234b5c503a",
         "name": "=|",
@@ -12584,18 +12572,6 @@
         },
         "roomRanks": {}
     },
-    "a0eb99bd55058417f05be1a7": {
-        "_id": "a0eb99bd55058417f05be1a7",
-        "name": "Khorne",
-        "color": "#73b95c",
-        "m": "p",
-        "rank": {
-            "name": "Administrator",
-            "_id": 2,
-            "roomonly": false
-        },
-        "roomRanks": {}
-    },
     "4b56c876c36afdd44ad2586a": {
         "_id": "4b56c876c36afdd44ad2586a",
         "name": "Anonymous",
@@ -12660,18 +12636,6 @@
         "_id": "460726e48aec718db4048c87",
         "name": "mars",
         "color": "#827532",
-        "m": "p",
-        "rank": {
-            "name": "User",
-            "_id": 0,
-            "roomonly": false
-        },
-        "roomRanks": {}
-    },
-    "1dd0112a8635fc004a4dfe19": {
-        "_id": "1dd0112a8635fc004a4dfe19",
-        "name": "🔪👑𝓗𝓲𝓴𝓪𝓻𝓲 𝓐𝓸𝔃𝓸𝓻𝓪💎✨",
-        "color": "#fd75cd",
         "m": "p",
         "rank": {
             "name": "User",
@@ -13278,18 +13242,6 @@
         },
         "roomRanks": {}
     },
-    "a00ed11fc5f9ba5f478ecfd7": {
-        "_id": "a00ed11fc5f9ba5f478ecfd7",
-        "name": "Anonymous",
-        "color": "#ea9b2b",
-        "m": "p",
-        "rank": {
-            "name": "User",
-            "_id": 0,
-            "roomonly": false
-        },
-        "roomRanks": {}
-    },
     "77783ff5f022bd0f13ab710f": {
         "_id": "77783ff5f022bd0f13ab710f",
         "name": "Anonymous",
@@ -13842,18 +13794,6 @@
         "_id": "aa339122db09160131ce4fa1",
         "name": "jung-kook",
         "color": "#9d63af",
-        "m": "p",
-        "rank": {
-            "name": "User",
-            "_id": 0,
-            "roomonly": false
-        },
-        "roomRanks": {}
-    },
-    "e98e24f27b97ffcd4540edb3": {
-        "_id": "e98e24f27b97ffcd4540edb3",
-        "name": "The Real Wolfgang Amadeus Mozart",
-        "color": "#dbecbb",
         "m": "p",
         "rank": {
             "name": "User",
