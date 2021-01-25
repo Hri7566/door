@@ -8,7 +8,7 @@ const Rank = require(__approot+'/lib/Rank');
 
 module.exports = class Mainframe {
     constructor (mppbots) {
-        this.mppbots = new Registry(mppbots);
+        this.mppbots = {};
         this.commands = {};
     }
 
@@ -16,10 +16,44 @@ module.exports = class Mainframe {
         this.loadCommands();
         Object.keys(Database.rooms).forEach(uri => {
             let rooms = Database.rooms[uri];
+            let delayAmount = 1000;
+            let delay = 0;
             rooms.forEach(room => {
-                this.mppbots[uri+room] = new MPPBot(this, process.env.BOT_PREFIX, uri, room, this.commands);
-                this.mppbots[uri+room].start();
+                delay += delayAmount;
+                setTimeout(() => {
+                    this.mppbots[`${uri}${room}`] = new MPPBot(this, process.env.BOT_PREFIX, uri, room, this.commands);
+                    this.mppbots[`${uri}${room}`].start();
+                }, delay);
             });
+        });
+    }
+
+    addRoom(bot, room) {
+        if (typeof(this.mppbots[`${bot.uri}${room}`]) !== 'undefined') return false;
+        this.mppbots[`${bot.uri}${room}`] = new MPPBot(this, process.env.BOT_PREFIX, uri, room, this.commands);
+        Database.rooms[bot.uri].push(room);
+        Database.save();
+    }
+
+    removeRoom(bot) {
+        delete this.mppbots[`${bot.uri}${bot.room}`];
+        delete Database.rooms[bot.uri][Database.rooms[bot.uri].indexOf(bot.room)];
+        Database.save();
+    }
+
+    changeRoom(bot, room) {
+        this.mppbots[`${bot.uri}${room}`] = this.mppbots[`${uri}${bot.room}`];
+        delete this.mppbots[`${bot.uri}${bot.room}`];
+        bot.room = room;
+        bot.client.setChannel(room);
+        Database.rooms[bot.uri][Database.rooms[bot.uri].indexOf(bot.room)] = room;
+    }
+
+    broadcast(str) {
+        Object.keys(this.mppbots).forEach(id => {
+            let bot = this.mppbots[id];
+            console.log(this.mppbots);
+            bot.sendChat(`Broadcast: ${str}`);
         });
     }
 
@@ -33,6 +67,20 @@ module.exports = class Mainframe {
             if (typeof(cmd.cmd) !== 'object') cmd.cmd = [cmd.cmd];
             this.commands[cmd.cmd[0]] = cmd;
         });
+    }
+
+    setRoomSettings(bot, settings) {
+        Object.keys(settings).forEach(key => {
+            let set = settings[key];
+            if (typeof(set) === 'undefined') return;
+            if (typeof(Database.roomsettings[bot.uri][bot.room]) == 'undefined') Database.roomsettings[bot.uri][bot.room] = {};
+            Database.roomsettings[bot.uri][bot.room][key] = set;
+        });
+        Database.save();
+    }
+
+    getRoomSettings(bot) {
+        return Database.roomsettings[bot.uri][bot.room];
     }
 
     getUser(p) {
