@@ -38,15 +38,19 @@ module.exports = class MPPBot {
 
     startChat() {
         this.chatInt = setInterval(() => {
-            if (this.chatStack.length < 4 && this.chatStack.length > 0) {
-                //this.client.sendArray([{m:'a', message: this.chatStack.reverse().pop()}]);
-                console.log(this.chatStack[0]);
-                this.chatStack.splice(0, 1);
-            } else {
-                setTimeout(() => {
+            if (this.chatStack.length > 0) {
+                if (this.chatStack.length < 4) {
+                    //this.client.sendArray([{m:'a', message: this.chatStack.reverse().pop()}]);
                     console.log(this.chatStack[0]);
                     this.chatStack.splice(0, 1);
-                }, 1600);
+                } else {
+                    let time;
+                    setTimeout(() => {
+                        time = this.chatStack.length * 1600;
+                        console.log(this.chatStack[0]);
+                        this.chatStack.splice(0, 1);
+                    }, time);
+                }
             }
         });
     }
