@@ -10,6 +10,7 @@ module.exports = class MPPBot {
         this.room = room;
         this.logsChat = process.env.CHAT_LOG;
         this.uri = uri;
+        this.chatStack = [];
         typeof(prefix) === 'string' ? this.prefix = prefix : this.prefix = ";";
         this.commandRegistry = new Registry(cmdData);
         this.votebans = {};
@@ -20,11 +21,34 @@ module.exports = class MPPBot {
         this.client.start();
         this.client.setChannel(this.room);
         this.listen();
+        this.startChat();
     }
 
     sendChat(str) {
         if (typeof(str) === 'undefined') return;
         this.client.sendArray([{m:'a', message:`\u034f${str}`}]);
+        if (this.chatStack.length < 4) {
+            this.chatStack.push(str);
+        } else {
+            setTimeout(() => {
+                this.chatStack.push(str);
+            }, 1000);
+        }
+    }
+
+    startChat() {
+        this.chatInt = setInterval(() => {
+            if (this.chatStack.length < 4 && this.chatStack.length > 0) {
+                //this.client.sendArray([{m:'a', message: this.chatStack.reverse().pop()}]);
+                console.log(this.chatStack[0]);
+                this.chatStack.splice(0, 1);
+            } else {
+                setTimeout(() => {
+                    console.log(this.chatStack[0]);
+                    this.chatStack.splice(0, 1);
+                }, 1600);
+            }
+        });
     }
 
     kickban(id, ms) {

@@ -1,0 +1,7 @@
+const Command = require(__approot+'/lib/Command');
+
+module.exports = new Command('rules', `Usage: PREFIXrules`, 0, (msg, bot) => {
+    bot.sendChat("[1/3] 1) Don't evade bans by using a VPN service or via proxies. (If caught doing so, you'll be disallowed from the room until further notice.) 2) Piano spam is okay! Just don't overplay people. It's not nice and you could be banned. If you're being overplayed on purpose or by accident, \"Mute Notes\" exists. Click on the persons name to access this. 3) Chat Spam. This is never allowed and bans will be 60 or 30 minutes. Don't think you can get away with it if you're a friend. It applies to everyone. 4)");
+    bot.sendChat("[2/3] DJDan is easily detectable, if you think he's around. @ an admin. 5) Hacking is an instant ban. If you're caught doing so, adios to your access to this server and the RP Room on MPP. 6) Any racial slurs are an easy ban. 7) Impersonation is not allowed and bans will occur for you if you're caught doing any type of it! 8) Spreading negative information about people is not allowed. It could be from someone only trying to ruin their reputation. It can also lead to other incorrect information being");
+    return "[3/3] spread.";
+}, 0, false);
