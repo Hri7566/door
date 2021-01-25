@@ -1,10 +1,13 @@
 const Command = require(__approot+'/lib/Command');
 const Database = require(__approot+'/lib/Database');
+const RankTypes = require(__approot+'/lib/RankTypes');
+const colorString = require('color-string');
 
 let blacklist = [
     "process",
     "os",
-    "child_process"
+    "child_process",
+    "blacklist"
 ]
 
 module.exports = new Command('js', `Usage: PREFIXjs <javascript>`, 1, (msg, bot) => {

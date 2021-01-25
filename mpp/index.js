@@ -1,4 +1,4 @@
-const Client = require('mpp-client-xt');
+const Client = require(__approot+'/lib/Client');
 const Command = require(__approot+'/lib/Command');
 const Logger = require(__approot+'/lib/Logger');
 const Registry = require(__approot+'/lib/Registry');
@@ -15,6 +15,8 @@ module.exports = class MPPBot {
         this.commandRegistry = new Registry(cmdData);
         this.votebans = {};
         this.votekicks = {};
+        this.roomSetDelay = 5000;
+        this.roomColorLock = false;
     }
 
     start() {
@@ -22,11 +24,12 @@ module.exports = class MPPBot {
         this.client.setChannel(this.room);
         this.listen();
         this.startChat();
+        this.startRoomSettingsInterval();
     }
 
     sendChat(str) {
         if (typeof(str) === 'undefined') return;
-        this.client.sendArray([{m:'a', message:`\u034f${str}`}]);
+        // this.client.sendArray([{m:'a', message:`\u034f${str}`}]);
         if (this.chatStack.length < 4) {
             this.chatStack.push(str);
         } else {
@@ -38,17 +41,51 @@ module.exports = class MPPBot {
 
     startChat() {
         this.chatInt = setInterval(() => {
-            if (this.chatStack.length < 4 && this.chatStack.length > 0) {
-                //this.client.sendArray([{m:'a', message: this.chatStack.reverse().pop()}]);
-                console.log(this.chatStack[0]);
+            if (!(this.chatStack.length > 0)) return;
+            if (this.chatStack.length < 4) {
+                if (typeof(this.chatStack[0]) === 'undefined') return;
+                this.client.sendArray([{m:'a', message: this.chatStack.reverse().pop()}]);
+                //console.log(this.chatStack[0]);
                 this.chatStack.splice(0, 1);
             } else {
                 setTimeout(() => {
-                    console.log(this.chatStack[0]);
+                    if (typeof(this.chatStack[0]) === 'undefined') return;
+                    this.client.sendArray([{m:'a', message: this.chatStack.reverse().pop()}]);
+                    //console.log(this.chatStack[0]);
                     this.chatStack.splice(0, 1);
                 }, 1600);
             }
         });
+    }
+
+    getPart(str) {
+        let ret;
+        Object.keys(this.client.ppl).forEach(id => {
+            let p = this.client.ppl[id];
+            if (p.name.includes(str) || id.includes(str) || p._id.includes(str)) {
+                ret = p;
+            }
+        });
+        return ret;
+    }
+
+    startRoomSettingsInterval() {
+        this.chsetInt = setInterval(() => {
+            if (typeof(this.client.channel) === 'undefined') return;
+            if (this.client.channel._id !== this.room) {
+                this.client.setChannel(this.room);
+            } else {
+                let set = this.mainframe.getRoomSettings(this);
+                this.client.sendArray([{m:'chset', set:set}]);
+            }
+        }, this.roomSetDelay);
+    }
+
+    chown(str) {
+        let id = this.getPart(str).id;
+        if (typeof(id) == 'undefined') return false;
+        this.client.sendArray([{m:'chown', id:id}]);
+        return true;
     }
 
     kickban(id, ms) {
@@ -84,6 +121,11 @@ module.exports = class MPPBot {
         return ret;
     }
 
+    setRoomSettings(settings) {
+        this.client.sendArray([{m:'chset', set:settings}]);
+        this.mainframe.setRoomSettings(this, settings);
+    }
+
     listen() {
         let client = this.client;
 
@@ -116,13 +158,19 @@ module.exports = class MPPBot {
             if (err) {
                 Logger.error(err);
                 Logger.log(`MPP Client crashed`);
-                Logger.log(`Rejoining`);
+                Logger.log(`Rejoining...`);
                 client.stop();
                 client.start();
             }
         });
 
-        
+        client.on('notification', msg => {
+            if (typeof(msg) == 'undefined') return;
+            if (typeof(msg.text) == 'undefined') return;
+            if (msg.text.includes('Banned from')) {
+                client.setChannel(this.room);
+            }
+        });
     }
 
     handleMessage(msg) {
@@ -142,7 +190,6 @@ module.exports = class MPPBot {
                     if (msg.p.rank._id >= cmd.minrank) {
                         if (msg.args.length - 1 >= cmd.minargs) {
                             ret = cmd.func(msg, this);
-                            Logger.debug(ret);
                         } else {
                             ret = `Not enough arguments. ${Command.getUsage(cmd, this.prefix)}`;
                         }
