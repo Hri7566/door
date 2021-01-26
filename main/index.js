@@ -57,6 +57,23 @@ module.exports = class Mainframe {
         });
     }
 
+    getGlobalBans() {
+        let ret = [];
+        Object.keys(Database.db).forEach(user => {
+            if (typeof(user.gbanned) === 'undefined') return;
+            if (user.gbanned) {
+                ret.push(user);
+            }
+        });
+        return ret;
+    }
+
+    gban(user) {
+        if (typeof(user.gbanned) == 'undefined') user.gbanned = true;
+        if (user.gbanned == false) user.gbanned = true;
+        Database.save();
+    }
+
     loadCommands() {
         let files = fs.readdirSync(__approot+'/commands');
         if (typeof(files) === 'undefined') return;

@@ -1,6 +1,7 @@
 const Color = require(__approot+'/lib/Color');
 const Command = require(__approot+'/lib/Command');
 const colorString = require('color-string');
+const stc = require('string-to-color');
 
 module.exports = new Command(['roomcolor', 'color'], `Usage: PREFIXroomcolor <color1> <color2>`, 1, (msg, bot) => {
     if (!bot.client.isOwner()) {
@@ -12,8 +13,11 @@ module.exports = new Command(['roomcolor', 'color'], `Usage: PREFIXroomcolor <co
         color = colorString.to.hex(colorString.get(msg.args[1]).value);
     } catch (err) {
         if (err) {
-            console.log(err);
-            return `"${msg.args[1]}" is not a valid color.`;
+            try {
+                color = stc(msg.args[1]);
+            } catch (err) {
+                return `"${msg.args[1]}" is not a valid color.`;
+            }
         }
     }
     if (msg.args[2]) {
@@ -21,13 +25,20 @@ module.exports = new Command(['roomcolor', 'color'], `Usage: PREFIXroomcolor <co
             color2 = colorString.to.hex(colorString.get(msg.args[2]).value);
         } catch (err) {
             if (err) {
-                return `"${msg.args[2]}" is not a valid color.`;
+                try {
+                    color2 = stc(msg.args[2]);
+                } catch (err) {
+                    return `"${msg.args[2]}" is not a valid color.`;
+                }
             }
         }
     }
+    if (typeof(color) == 'undefined') {
+        return `"${msg.args[1]}" is not a valid color.`;
+    }
     let c;
-    if (typeof(color2) == 'undefined') {
-        c = colorString.get(msg.args[1]);
+    if (typeof(color2) == 'undefined' && typeof(color) !== 'undefined') {
+        c = colorString.get(color);
         for (let i = 0; i < 3; i++) {
             c[i] -= 64;
         }

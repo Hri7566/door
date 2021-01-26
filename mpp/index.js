@@ -39,6 +39,12 @@ module.exports = class MPPBot {
         }
     }
 
+    gban(p) {
+        if (typeof(p) === 'undefined') return;
+        this.mainframe.gban(p);
+        this.kickban(p._id, 60000);
+    }
+
     startChat() {
         this.chatInt = setInterval(() => {
             if (!(this.chatStack.length > 0)) return;
@@ -138,6 +144,15 @@ module.exports = class MPPBot {
         //         client.chown(client.findParticipantById('06ff004e30d91d502a8effed').id);
         //     }
         // });
+
+        client.on('participant added', p => {
+            let gbanned = this.mainframe.getGlobalBans();
+            gbanned.forEach(user => {
+                if (p._id == user._id) {
+                    this.kickban(p._id, 36e5);
+                }
+            });
+        });
 
         client.on('a', msg => {
             let outmsg = this.handleMessage(msg);
