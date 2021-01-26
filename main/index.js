@@ -10,13 +10,14 @@ module.exports = class Mainframe {
     constructor (mppbots) {
         this.mppbots = {};
         this.commands = {};
+        this.nextTime = 0;
     }
 
     start() {
         this.loadCommands();
         Object.keys(Database.rooms).forEach(uri => {
             let rooms = Database.rooms[uri];
-            let delayAmount = 1000;
+            let delayAmount = 3000;
             let delay = 0;
             rooms.forEach(room => {
                 delay += delayAmount;
@@ -26,6 +27,14 @@ module.exports = class Mainframe {
                 }, delay);
             });
         });
+    }
+
+    checkFlag(p, flag) {
+        let user = this.getUser(p);
+        if (typeof(user) == 'undefined') return;
+        if (typeof(user.flags) == 'undefined') user.flags = {watchlist: false};
+        if (typeof(user.flags[flag]) == 'undefined') return false;
+        return user.flags[flag];
     }
 
     addRoom(bot, room) {
@@ -52,9 +61,18 @@ module.exports = class Mainframe {
     broadcast(str) {
         Object.keys(this.mppbots).forEach(id => {
             let bot = this.mppbots[id];
-            console.log(this.mppbots);
             bot.sendChat(`Broadcast: ${str}`);
         });
+    }
+
+    getNextTime() {
+        if (this.nextTime == 0) {
+            setTimeout(() => {
+                this.nextTime = 0;
+            }, Object.keys(this.mppbots).length*3000);
+        }
+        this.nextTime += 3000;
+        return this.nextTime;
     }
 
     getGlobalBans() {

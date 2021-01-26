@@ -35,7 +35,7 @@ module.exports = class MPPBot {
         } else {
             setTimeout(() => {
                 this.chatStack.push(str);
-            }, 1000);
+            }, 1600);
         }
     }
 
@@ -95,7 +95,7 @@ module.exports = class MPPBot {
     }
 
     kickban(id, ms) {
-        this.client.kickBan(id, ms);
+        this.client.sendArray([{m:'kickban', _id: id, ms: Math.min(ms, 36e5)}]);
     }
 
     votekick(p, id) {
@@ -152,6 +152,11 @@ module.exports = class MPPBot {
                     this.kickban(p._id, 36e5);
                 }
             });
+            let user = this.mainframe.getUser(p);
+            let watching = this.mainframe.checkFlag(user, 'watchlist');
+            if (watching) {
+                this.sendChat(`Keep an eye on ${p.name} [${p._id}], they're on the watchlist!`);
+            }
         });
 
         client.on('a', msg => {
@@ -175,7 +180,9 @@ module.exports = class MPPBot {
                 Logger.log(`MPP Client crashed`);
                 Logger.log(`Rejoining...`);
                 client.stop();
-                client.start();
+                setTimeout(() => {
+                    client.start();
+                }, this.mainframe.getNextTime());
             }
         });
 
@@ -185,6 +192,13 @@ module.exports = class MPPBot {
             if (msg.text.includes('Banned from')) {
                 client.setChannel(this.room);
             }
+        });
+
+        client.on('disconnect', evt => {
+            client.stop();
+            setTimeout(() => {
+                client.start();
+            }, this.mainframe.getNextTime());
         });
     }
 

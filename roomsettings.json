@@ -1,8 +1,10 @@
 {
     "wss://www.multiplayerpiano.com:443": {
         "Hri7566's Room": {
-            "color": "#ADFF2F",
-            "color2": "#5ddde0"
+            "color": "#000000",
+            "color2": "#000000",
+            "crownsolo": false,
+            "no cussing": false
         },
         "Politics Arguing Room": {
             "color": "#000000",

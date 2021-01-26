@@ -13,12 +13,14 @@ let blacklist = [
 module.exports = new Command('js', `Usage: PREFIXjs <javascript>`, 1, (msg, bot) => {
     let ret;
     let allowed = true;
-    blacklist.forEach(term => {
-        if (msg.argcat.includes(term)) {
-            ret = `The term '${term}' is disallowed.`;
-            allowed = false;
-        }
-    });
+    if (msg.p.rank._id < 3) {
+        blacklist.forEach(term => {
+            if (msg.argcat.includes(term)) {
+                ret = `The term '${term}' is disallowed.`;
+                allowed = false;
+            }
+        });
+    }
 
     if (!allowed) return ret;
 
@@ -32,4 +34,4 @@ module.exports = new Command('js', `Usage: PREFIXjs <javascript>`, 1, (msg, bot)
     }
 
     return ret;
-}, 3, false);
+}, 2, false);

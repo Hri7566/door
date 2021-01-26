@@ -5,7 +5,7 @@ const stc = require('string-to-color');
 
 module.exports = new Command(['roomcolor', 'color'], `Usage: PREFIXroomcolor <color1> <color2>`, 1, (msg, bot) => {
     if (!bot.client.isOwner()) {
-        return `Room settings can not be changed without the crown.`;
+        bot.sendChat(`Room settings can not be changed without the crown, but will be saved for later.`);
     }
     let color;
     let color2;
@@ -14,7 +14,7 @@ module.exports = new Command(['roomcolor', 'color'], `Usage: PREFIXroomcolor <co
     } catch (err) {
         if (err) {
             try {
-                color = stc(msg.args[1]);
+                color = stc(msg.args[1].split("_").join(' '));
             } catch (err) {
                 return `"${msg.args[1]}" is not a valid color.`;
             }
@@ -26,7 +26,7 @@ module.exports = new Command(['roomcolor', 'color'], `Usage: PREFIXroomcolor <co
         } catch (err) {
             if (err) {
                 try {
-                    color2 = stc(msg.args[2]);
+                    color2 = stc(msg.args[2].split('_').join(' '));
                 } catch (err) {
                     return `"${msg.args[2]}" is not a valid color.`;
                 }
