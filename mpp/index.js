@@ -42,7 +42,13 @@ module.exports = class MPPBot {
     gban(p) {
         if (typeof(p) === 'undefined') return;
         this.mainframe.gban(p);
-        this.kickban(p._id, 60000);
+        return this.kickban(p._id, 60000);
+    }
+
+    ungban(p) {
+        if (typeof(p) === 'undefined') return;
+        this.mainframe.ungban(p);
+        return this.unban(p._id);
     }
 
     startChat() {
@@ -95,6 +101,7 @@ module.exports = class MPPBot {
     }
 
     kickban(id, ms) {
+        if (this.client.user._id == id) return;
         this.client.sendArray([{m:'kickban', _id: id, ms: Math.min(ms, 36e5)}]);
     }
 
@@ -234,5 +241,9 @@ module.exports = class MPPBot {
 
     checkId(id) {
         return /[a-f0-9]{24}/.test(id);
+    }
+
+    unban(id) {
+        this.client.sendArray([{m:'unban', _id: id}]);
     }
 }

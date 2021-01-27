@@ -39,15 +39,17 @@ module.exports = class Mainframe {
 
     addRoom(bot, room) {
         if (typeof(this.mppbots[`${bot.uri}${room}`]) !== 'undefined') return false;
-        this.mppbots[`${bot.uri}${room}`] = new MPPBot(this, process.env.BOT_PREFIX, uri, room, this.commands);
+        this.mppbots[`${bot.uri}${room}`] = new MPPBot(this, process.env.BOT_PREFIX, bot.uri, room, this.commands);
         Database.rooms[bot.uri].push(room);
         Database.save();
     }
 
-    removeRoom(bot) {
-        delete this.mppbots[`${bot.uri}${bot.room}`];
-        delete Database.rooms[bot.uri][Database.rooms[bot.uri].indexOf(bot.room)];
-        Database.save();
+    removeRoom(bot, room) {
+        if (typeof(this.mppbots[`${bot.uri}${room}`]) !== 'undefined') {
+            delete this.mppbots[`${bot.uri}${room}`];
+            delete Database.rooms[bot.uri][Database.rooms[bot.uri].indexOf(bot.room)];
+            Database.save();
+        }
     }
 
     changeRoom(bot, room) {
@@ -91,6 +93,14 @@ module.exports = class Mainframe {
         if (typeof(user.gbanned) == 'undefined') user.gbanned = true;
         if (user.gbanned == false) user.gbanned = true;
         Database.save();
+        return true;
+    }
+
+    ungban(user) {
+        if (typeof(user.gbanned) == 'undefined') user.gbanned = false;
+        if (user.gbanned == true) user.gbanned = false;
+        Database.save();
+        return true;
     }
 
     loadCommands() {
