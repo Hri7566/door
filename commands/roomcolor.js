@@ -7,6 +7,9 @@ module.exports = new Command(['roomcolor', 'color'], `Usage: PREFIXroomcolor <co
     if (!bot.client.isOwner()) {
         bot.sendChat(`Room settings can not be changed without the crown, but will be saved for later.`);
     }
+    if (bot.roomColorLock && msg.p.rank._id < 1) {
+        return `Room color is locked.`;
+    }
     let color;
     let color2;
     try {
@@ -49,6 +52,5 @@ module.exports = new Command(['roomcolor', 'color'], `Usage: PREFIXroomcolor <co
         return `Set background color to ${color} [${Color.getNearestColor(color)}] with fade of ${color2} [${Color.getNearestColor(color2)}].`;
     } else {
         return `Set background color to ${color} [${Color.getNearestColor(color)}].`;
-
     }
 }, 0, false);

@@ -231,4 +231,8 @@ module.exports = class MPPBot {
             return ret;
         }
     }
+
+    checkId(id) {
+        return /[a-f0-9]{24}/.test(id);
+    }
 }

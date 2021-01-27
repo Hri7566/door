@@ -77,7 +77,8 @@ module.exports = class Mainframe {
 
     getGlobalBans() {
         let ret = [];
-        Object.keys(Database.db).forEach(user => {
+        Object.keys(Database.db).forEach(id => {
+            let user = Database.db[id];
             if (typeof(user.gbanned) === 'undefined') return;
             if (user.gbanned) {
                 ret.push(user);
@@ -207,8 +208,15 @@ module.exports = class Mainframe {
     genUser(p) {
         if (typeof(p) === 'undefined') return;
 
-        if (typeof(this.getUser(p)) === 'undefined') {
+        let user = this.getUser(p);
+
+        if (typeof(user) === 'undefined') {
             Database.db[p._id] = new User(p);
+            user = Database.db[p._id];
+        }
+
+        if (user.name !== p.name) {
+            user.name = p.name;
         }
         
         Database.save();
