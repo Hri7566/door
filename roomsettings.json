@@ -5,17 +5,17 @@
             "color2": "#000000",
             "crownsolo": false,
             "no cussing": false,
-            "visible": true
+            "visible": false
         },
         "Politics Arguing Room": {
             "color": "#000000",
             "color2": "#000000"
         },
         "✧𝓡𝓟 𝓡𝓸𝓸𝓶✧": {
-            "color": "#166dd6",
-            "color2": "#ece70c",
+            "color": "#000000",
+            "color2": "#000000",
             "crownsolo": true,
-            "visible": false
+            "visible": true
         }
     }
 }
