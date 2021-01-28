@@ -46,8 +46,8 @@ module.exports = class Mainframe {
 
     removeRoom(bot, room) {
         if (typeof(this.mppbots[`${bot.uri}${room}`]) !== 'undefined') {
-            delete this.mppbots[`${bot.uri}${room}`];
-            delete Database.rooms[bot.uri][Database.rooms[bot.uri].indexOf(bot.room)];
+            this.mppbots[`${bot.uri}${room}`] = undefined;
+            Database.rooms[bot.uri][Database.rooms[bot.uri].indexOf(bot.room)] = undefined;
             Database.save();
         }
     }
