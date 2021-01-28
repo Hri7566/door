@@ -54,7 +54,7 @@ module.exports = class Mainframe {
 
     changeRoom(bot, room) {
         this.mppbots[`${bot.uri}${room}`] = this.mppbots[`${uri}${bot.room}`];
-        delete this.mppbots[`${bot.uri}${bot.room}`];
+        this.mppbots[`${bot.uri}${bot.room}`] = undefined;
         bot.room = room;
         bot.client.setChannel(room);
         Database.rooms[bot.uri][Database.rooms[bot.uri].indexOf(bot.room)] = room;
