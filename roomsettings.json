@@ -12,10 +12,11 @@
             "color2": "#000000"
         },
         "✧𝓡𝓟 𝓡𝓸𝓸𝓶✧": {
-            "color": "#000000",
-            "color2": "#000000",
-            "crownsolo": true,
-            "visible": true
+            "color": "#b58dd8",
+            "color2": "#B58DD8",
+            "crownsolo": false,
+            "visible": true,
+            "no cussing": false
         }
     }
 }

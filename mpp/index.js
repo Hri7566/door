@@ -45,6 +45,10 @@ module.exports = class MPPBot {
         return this.kickban(p._id, 60000);
     }
 
+    getRules() {
+        return this.mainframe.getRules(this.room);
+    }
+
     ungban(p) {
         if (typeof(p) === 'undefined') return;
         this.mainframe.ungban(p);

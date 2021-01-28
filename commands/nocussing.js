@@ -1,6 +1,6 @@
 const Command = require(__approot+'/lib/Command');
 
-module.exports = new Command(['nocussing','cuss','cussing',"noc"], `Usage: PREFIXnoc`, 0, (msg, bot) => {
+module.exports = new Command(['nocussing','cuss','cussing',"noc"], `Usage: PREFIXnocussing`, 0, (msg, bot) => {
     if (!bot.client.isOwner()) {
         bot.sendChat(`Room settings can not be changed without the crown, but will be saved for later.`);
     }

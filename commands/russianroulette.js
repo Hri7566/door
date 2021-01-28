@@ -53,4 +53,4 @@ module.exports = new Command(['russianroulette','rur'], `Usage: PREFIXrussianrou
         reset();
     }
     return answer;
-}, 0, false);
+}, 0, true);

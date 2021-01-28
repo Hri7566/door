@@ -115,6 +115,20 @@ module.exports = class Mainframe {
         });
     }
 
+    setRules(room, rulestr) {
+        if (typeof(room) !== 'string') return;
+        if (typeof(rulestr) !== 'string') return;
+        if (rulestr.length > 512) return false;
+        Database.rules[room] = rulestr;
+        Database.save();
+        return true;
+    }
+
+    getRules(room) {
+        if (typeof(room) !== 'string') return;
+        return Database.rules[room];
+    }
+
     setRoomSettings(bot, settings) {
         Object.keys(settings).forEach(key => {
             let set = settings[key];
