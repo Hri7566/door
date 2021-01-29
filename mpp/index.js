@@ -25,6 +25,7 @@ module.exports = class MPPBot {
         this.listen();
         this.startChat();
         this.startRoomSettingsInterval();
+        this.startBanInterval();
     }
 
     sendChat(str) {
@@ -72,6 +73,20 @@ module.exports = class MPPBot {
                 }, time);
             }
         });
+    }
+
+    startBanInterval() {
+        setInterval(() => {
+            let gbanned = this.mainframe.getGlobalBans();
+            gbanned.forEach(user => {
+                Object.keys(this.client.ppl).forEach((id) => {
+                    let p = this.client.ppl[id];
+                    if (p._id == user._id) {
+                        this.kickban(p._id, 36e5);
+                    }
+                });
+            });
+        }, 500);
     }
 
     getPart(str) {

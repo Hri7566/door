@@ -35,22 +35,23 @@ let times = 0;
 
 shuffle(gunChoices);
 
-function reset() {
+function reset(bot) {
     times = 0;
     shuffle(gunChoices);
+    bot.sendChat("Russian roulette has been restarted.");
 }
 
 module.exports = new Command(['russianroulette','rur'], `Usage: PREFIXrussianroulette`, 0, (msg, bot) => {
     if (times > 5) {
-        reset();
+        reset(bot);
     }
     times++;
     let answer = `${msg.p.name}, you lived.`;
     if (gunChoices[times-1] == 1) {
         bot.kickban(msg.p._id, 60*60*1000);
         bot.unban(msg.p._id);
-        answer = `${msg.p.name} died playing russian roulette.`;
-        reset();
+        answer = `${msg.p.name} blew their own brains out playing russian roulette.`;
+        reset(bot);
     }
     return answer;
 }, 0, true);
